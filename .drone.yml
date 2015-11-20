@@ -6,6 +6,6 @@ build:
         - go get
         - go build
         - go test
-    compose:
-        cache:
-            image: redis
+compose:
+    cache:
+        image: redis
