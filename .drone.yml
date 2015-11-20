@@ -1,6 +1,8 @@
 build:
-    image: golang:1.5.1
-  commands:
-    - go get
-    - go build
-    - go test
+    image: golang:1.5
+    environment:
+        - GO15VENDOREXPERIMENT=1
+    commands:
+        - go get
+        - go build
+        - go test
